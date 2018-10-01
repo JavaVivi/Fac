@@ -13,7 +13,7 @@ public class Contact {
   
   public Contact(String nom, String numero, String mail) {
     this.nom = nom;
-    this.numero;
+    this.numero = numero;
     this.mail = mail;
   }
   
