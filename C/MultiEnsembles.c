@@ -60,7 +60,25 @@ int Union ( MultiEnsemble m1, MultiEnsemble m2) {
       return m3;
  }                       
 						 
-				
-		
+
+int Inter(MultiEnsemble m1, MultiEnsemble m2) {
+	MultiEnsemble m3;
+	int i;
+	int j;
+	int nbElem;
+	int tmp,
+	int k = 1;
+	nbElem = min(m1.NbElem, m2.NbElem);
+	m3 = init(NbElem);
+	for(i = 0; i < m1.NbElem) {
+		tmp = RechElt(m2, m1.tab[i].val, m2, m2.NbElem)  // ???
+		if ( tmp > o) {
+			m3.tab[k].val = m1.tab[i].val;
+			m3.tab[k].nbOcc = m1.tab[i].nbOcc;
+			m3.NbElem++;
+		}	
+	}	
+	return m3;
+}
                  
       
