@@ -17,6 +17,14 @@ public class Contact {
     this.mail = mail;
   }
   
+  public String getNom() {
+    return nom;
+  }
+  
+  public String getNumero() {
+    return numero;
+  }
+  
   
 
       
