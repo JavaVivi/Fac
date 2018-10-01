@@ -38,7 +38,7 @@ public class Contact {
   }
   
   public void setMail(String mail) {
-    this.mail = mail
+    this.mail = mail;
   }
   
   public String toString() {
