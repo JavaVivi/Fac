@@ -12,9 +12,9 @@ public class Contact {
   }
   
   public Contact(String nom, String numero, String mail) {
-    this.nom = nom;
-    this.numero = numero;
-    this.mail = mail;
+    setNom(nom);
+    setNumero(numero);
+    setMail(mail);
   }
   
   public String getNom() {
@@ -25,18 +25,24 @@ public class Contact {
     return numero;
   }
   
+  public String getMail() {
+    return mail;
+  }
   
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+  public void setNom(String nom) {
+    this.nom = nom;
+  }
+  
+  public void setNumero(String numero) {
+    this.numero = numero;
+  }
+  
+  public void setMail(String mail) {
+    this.mail = mail
+  }
+  
+  public String toString() {
+    return "Contact [ Name" +name+ ","Numero :" +numero+ ","Mail :"] +mail;
+  }
       
  }      
