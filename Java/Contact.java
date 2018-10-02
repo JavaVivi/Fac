@@ -42,7 +42,7 @@ public class Contact {
   }
   
   public String toString() {
-    return "Contact [ Name" +name+ ","Numero :" +numero+ ","Mail :"] +mail;
+    return "Contact [ Name" +nom+ ","Numero :" +numero+ ","Mail :"] +mail;
   }
       
  }      
