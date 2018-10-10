@@ -7,8 +7,7 @@ public class Ensemble {
 	private int nbPoints = 0;
 	
 	public Ensemble() {
-		tab = new Point[20];
-		this.nbPoints = 20;
+		this(20);
 	}
 	
 	public Ensemble(int taille) {
@@ -30,7 +29,7 @@ public class Ensemble {
 	public void setNbPoints(int nbPoints) {
 		this.nbPoints = nbPoints;
 	}
-	//si le tableau n'est pas rempli, on range point dans la dernière case du tableau 
+	//si le tableau n'est pas rempli, on range point dans la derniÃ¨re case du tableau 
 	//puis on incremente l'attribut nbPoints de 1 pour l'affichage
 	public void ajouter(Point point) {
 		if(nbPoints != tab.length) {
