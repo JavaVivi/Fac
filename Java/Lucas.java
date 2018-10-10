@@ -16,8 +16,7 @@ public class Lucas {
 	private int i;
 	
 	public Lucas() {
-		suite = new int[20];
-		this.nbMax = 20;
+		this(20);
 	}
 	
 	public Lucas(int nbMax) {
