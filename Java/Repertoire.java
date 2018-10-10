@@ -7,8 +7,7 @@ public class Repertoire {
 	private int nbContacts = 0;
 	
 	public Repertoire() {
-		contacts = new Contact[10];
-		nbContacts = 10;
+		this(10);
 	}
 	
 	public Repertoire(int nbContacts) {
