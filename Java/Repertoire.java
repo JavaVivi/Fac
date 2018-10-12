@@ -37,22 +37,22 @@ public class Repertoire {
 		}
 	}
 	
-	public boolean rechercheNom(String nom) {
+	public Contact rechercheNom(String nom) {
 		for(int i = 0; i < contacts.length; i++) {
 			if(contacts[i].getNom() == nom) {
-				return true;
+				return contacts[i];
 			}
 		}
-		return false;
+		return null;
 	}
 	
-	public boolean rechercheTel(String numero) {
+	public Contact rechercheTel(String numero) {
 		for(int i = 0; i < contacts.length; i++) {
 			if(contacts[i].getNumero() == numero) {
-				return true;
+				return contacts[i];
 			}
 		}
-		return false;
+		return null;
 	}
 
 	@Override
