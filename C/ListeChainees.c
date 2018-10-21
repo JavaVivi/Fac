@@ -17,5 +17,18 @@ Bool existVal(int e, Liste *l) {
   }
 }
 
+Liste adresseVal(int e, Liste *l) {
+  if(TestVide(*l) == 0) {
+    return NULL;
+  } else {
+    while(*l != NULL) {
+      if(e == (*l).val) {
+        return *l;
+      }
+      *l = (*l).suivant;
+    }
+    return NULL;
+  }
+}
 
-  
+
