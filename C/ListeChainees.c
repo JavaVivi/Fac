@@ -1,4 +1,4 @@
-//suite et fin du td3 
+//suite et fin du td3/4 
 
 Bool existVal(int e, Liste *l) {
   bool i = FALSE;
@@ -32,3 +32,28 @@ Liste adresseVal(int e, Liste *l) {
 }
 
 
+Liste generListe() {
+  //ne pas oublier d'importer la bibliothèque time.h
+  Liste *new;
+  int ml;
+  int val;
+  int i;
+  Liste *store;
+  *store = NULL;
+  ml = rand(1,10);
+  for(i = 0; i < ml; i++) {
+    val = rand(0,50);
+    *new = InserTete(*new, val);
+  }
+  return *new;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
