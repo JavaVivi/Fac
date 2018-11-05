@@ -55,6 +55,15 @@ int maxCoef(Polynome *p, int max) {
   }
 }
 
+int sommeCoef(Polynome *p, int somme) {
+  if(p->suivant == NULL) {
+    return somme;
+  }else{
+    somme = somme + p->membre->coef;
+    return sommeCoef(p->suivant, somme);
+  }
+}
+
 
     
   
