@@ -25,6 +25,30 @@ Monome appartientMonome (Monome *m, Polynome *p) {
   }
 }
 
+void delPolynome (Monome *m2, Polynome *p) {
+  Polynome *p2;
+  Polynome *store;
+  Polynome *next;
+  Polynome *store2 = NULL;
+  Boolean nontrouve = true;
+  while(videPoly(*p) && nontrouve) {
+    if(p->membre->degre != m2->suivant) {
+      *p = p->suivant;
+    }else {
+      *next = p->suivant;
+      free(*p);
+      *p = *store2;
+    }
+    p->suivant = *next;
+    nontrouve = false;
+  }
+}
 
+int maxCoef(Polynome *p, int max) {
+  if(p->suivant == NULL) {
+    return max;
+  }else{
+    
+    
   
   
