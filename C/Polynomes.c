@@ -64,6 +64,30 @@ int sommeCoef(Polynome *p, int somme) {
   }
 }
 
+Polynome generPoly() {
+  Polynome *new;
+  int nm;
+  int coef;
+  int def;
+  int i;
+  Polynome *p1;
+  *new = NULL;
+  *new = malloc(sizeof(Polynome));
+  nm = rand(1,10);
+  for ( i = 1 ; i < nm; i++) {
+    coef = rand (1,6);
+    deg = rand(0,5);
+    *p1 = NULL;
+    *p1 = malloc(sizeof(Polynome));
+    p1->membre->coeff = coef;
+    p1->membre->degre = deg;
+    *new = inserTete(&(*new), &(*p1));
+    *new = trier(new);
+  }
+  return *new;
+}
+
+
 
     
   
