@@ -135,11 +135,21 @@ Polynome sommePoly(Polynome *p1, Polynome *p2) {
   }
   if(videPoly(*p1) == 1 && videPoly(*p2)) == 0 {
     while(videPoly(*p2) == 0) {
-      inserQueue(p2->membre, p3);
+      inserQueue(p2->membre, *p3);
       *p2 = p2->suivant;
     }
   }
-  if(
+  if(videPoly(*p1) == 0 && videPoly(*p2) == 1) {
+    while(videPoly(*p1) == 0) {
+      inserQueue(p1->membre, *p3);
+      *p1 = p1->suivant;
+    }
+  }
+}
+
+int main() {
+  
+}
   
 
     
