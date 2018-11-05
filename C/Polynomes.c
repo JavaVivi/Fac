@@ -87,8 +87,63 @@ Polynome generPoly() {
   return *new;
 }
 
+void affichPoly(Polynome *p) {
+  while(videPoly(*p) == 0) {
+    printf(p->membre->coeff);
+    printf(p->membre->degre);
+    *p = p->suivant;
+    }
+}
 
+Polynome derivPoly (Polynome *p) {
+  if(*p == NULL) {
+    return *p;
+  }
+  else {
+    p->membre->coeff = p->membre->coeff * p->membre->degre;
+    p->membre->degre = p->membre->degre-1;
+  }
+  return derivPoly(p->suivant);
+}
 
+Polynome sommePoly(Polynome *p1, Polynome *p2) {
+  Polynome *p3;
+  Monome *tmp;
+  *p3 = NULL;
+  while(videPoly(*p1) == 0 && videPoly(*p2)) == 0{
+   if(p1->membre->coeff == p2->membre->degre) {
+    if(p1->membre->coeff + p2->membre->coeff != 0) {
+      tmp->degre = p1->membre->degre;
+      tmp->coeff = p1->membre->degre + p2->membre->coeff;
+    }
+    *p1 = p1->suivant;
+    *p2 = p2->suivant;
+    inserQueue(*tmp, *p2);
+  }
+  }
+  if(p1->membre->degre > p2->membre->degre) {
+    tmp->degre = p2->membre->degre;
+    tmp->coeff = p2->membre->coef;
+    *p2 = p2->suivant;
+    inserQueue(*tmp, *p3);
+  }
+  if(p1->membre->degre < p2->membre->degre) {
+    tmp->degre = p1->membre->degre;
+    tmp->coeff = p1->membre->coeff;
+    *p1 = p1->suivant;
+    inserQueue(*tmp, *p3);
+  }
+  if(videPoly(*p1) == 1 && videPoly(*p2)) == 0 {
+    while(videPoly(*p2) == 0) {
+      inserQueue(p2->membre, p3);
+      *p2 = p2->suivant;
+    }
+  }
+  if(
+  
+
+    
+    
     
   
   
