@@ -48,7 +48,14 @@ int maxCoef(Polynome *p, int max) {
   if(p->suivant == NULL) {
     return max;
   }else{
-    
+    if(p->membre->coeff > max){
+      max = p->membre->coeff
+    }
+    return maxCoef(p->suivant, max)
+  }
+}
+
+
     
   
   
