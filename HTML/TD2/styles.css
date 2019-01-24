@@ -1,0 +1,45 @@
+h1 {
+	text-align: center;
+	color : purple;
+	font-family: arial, "sans serif";
+	font-size: 30pt;
+}
+
+p {
+	text-align: justify;
+	font-family: arial, "sans serif";
+	font-size: 14pt;
+	text-indent: 5cm;
+	
+}
+
+h2 {
+	color: blue;
+	text-align: center;
+	font-family: arial, "sans serif";
+	font-style: italic;
+	}
+
+h3 {
+	color: red;
+	text-align: justify;
+	font-family: arial, "sans serif";
+}
+
+
+table {
+	text-align: center;
+	font-family: arial, "sans serif";
+	text-indent: 9cm;
+ }
+ 
+
+ 
+ body {
+ 	background-image: url(background.png);
+ }
+
+
+ 
+ 
+ 
